@@ -32,7 +32,7 @@ public class DeleteLead {
 		driver.findElement(By.id("ext-gen262")).clear();
 		driver.findElement(By.id("ext-gen262")).sendKeys("191");
 		driver.findElement(By.id("ext-gen266")).sendKeys("1");
-		driver.findElement(By.id("ext-gen270")).sendKeys("9500194552");
+		driver.findElement(By.id("ext-gen270")).sendKeys("9444200272");
 //		10	Click find leads button
 		driver.findElement(By.xpath("//button[text()='Find Leads']")).click();
 //		11	Capture lead ID of First Resulting lead

@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class DeleteLead {
+public class deleteLead {
 	public static void main(String[] args) throws InterruptedException {
 //	http://leaftaps.com/opentaps/control/main	 
 //		1	Launch the browser
@@ -49,10 +49,10 @@ public class DeleteLead {
 		driver.findElement(By.xpath("(//label[text()='Lead ID:']/following::input)[1]")).sendKeys(leadID);
 //		16	Click find leads button
 		driver.findElement(By.xpath("//button[text()='Find Leads']")).click();
-//		17	Verify message "No records to display" in the Lead List. This message confirms the successful deletion
+//		17	Verify message "No records" in the Lead List. This message confirms the successful deletion
 		Thread.sleep(3000);
 		 String message = driver.findElement(By.xpath("//div[@class='x-paging-info']")).getText();
-		if (message.equals("No records to display")) {
+		if (message.equals("No records ")) {
 			System.out.println("The lead is deleted");	
 		}
 		else {

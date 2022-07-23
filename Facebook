@@ -30,7 +30,7 @@ public class Facebook {
 		//dropdown selection for date
 		 WebElement day = driver.findElement(By.id("day"));
 		Select dayDrop= new Select(day);
-		dayDrop.selectByVisibleText("12");
+		dayDrop.selectByVisibleText("19");
 		//dropdown selection for month
 		 WebElement month = driver.findElement(By.id("month"));
 		Select monthDrop= new Select(month);

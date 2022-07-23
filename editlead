@@ -3,7 +3,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
-public class EditLead {
+public class editLead {
 	public static void main(String[] args) throws InterruptedException {
 //		http://leaftaps.com/opentaps/control/main
 //		
@@ -26,7 +26,7 @@ public class EditLead {
 //		* 7	Click Find leads
 		driver.findElement(By.linkText("Find Leads")).click();
 //		* 8	Enter first name
-		driver.findElement(By.xpath("(//label[text()='First name:'])[3]/following::input")).sendKeys("Akshaya");
+		driver.findElement(By.xpath("(//label[text()='First name:'])[3]/following::input")).sendKeys("Sathya");
 //		* 9	Click Find leads button
 		driver.findElement(By.xpath("//button[text()='Find Leads']")).click();
 //		* 10 Click on first resulting lead
